@@ -1,0 +1,131 @@
+{
+  "name": "pressbooks/pressbooksoss-bedrock",
+  "type": "project",
+  "license": "MIT",
+  "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
+  "homepage": "https://roots.io/bedrock/",
+  "authors": [
+    {
+      "name": "Scott Walkinshaw",
+      "email": "scott.walkinshaw@gmail.com",
+      "homepage": "https://github.com/swalkinshaw"
+    },
+    {
+      "name": "Ben Word",
+      "email": "ben@benword.com",
+      "homepage": "https://github.com/retlehs"
+    }
+  ],
+  "keywords": [
+    "bedrock",
+    "roots",
+    "wordpress",
+    "stack",
+    "composer",
+    "wp"
+  ],
+  "support": {
+    "issues": "https://github.com/roots/bedrock/issues",
+    "forum": "https://discourse.roots.io/category/bedrock"
+  },
+  "config": {
+    "sort-packages": true,
+    "preferred-install": {
+      "pressbooks/*": "source",
+      "*": "dist"
+    },
+    "allow-plugins": {
+      "composer/installers": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "mnsami/composer-custom-directory-installer": true,
+      "roots/wordpress-core-installer": true,
+      "php-http/discovery": true
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/lumenlearning/candela-citation"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "composer/installers": "2.3.0",
+    "hypothesis/wp-hypothesis": "0.7.3",
+    "lumenlearning/candela-citation": "dev-master",
+    "pressbooks/excalibur": "0.8.1",
+    "pressbooks/h5p-wordpress-plugin": "1.16.1",
+    "pressbooks/pressbooks": "6.20.1",
+    "pressbooks/pressbooks-aldine": "1.19.1",
+    "pressbooks/pressbooks-book": "2.26.3",
+    "pressbooks/pressbooks-cas-sso": "2.5.0",
+    "pressbooks/pressbooks-clarke": "2.4.1",
+    "pressbooks/pressbooks-donham": "2.1.1",
+    "pressbooks/pressbooks-jacobs": "1.3.1",
+    "pressbooks/pressbooks-network-catalog": "1.3.6",
+    "pressbooks/pressbooks-saml-sso": "2.5.1",
+    "pressbooks/pressbooks-shortcode-handler": "1.2.0",
+    "pressbooks/pressbooks-stats": "1.10.1",
+    "roots/bedrock-autoloader": "1.0.4",
+    "roots/bedrock-disallow-indexing": "2.0.0",
+    "roots/multisite-url-fixer": "1.1.0",
+    "roots/wordpress": "6.6.1",
+    "roots/wp-config": "1.0.0",
+    "roots/wp-password-bcrypt": "1.1.0",
+    "vlucas/phpdotenv": "5.6.1",
+    "wpackagist-plugin/akismet": "5.3.3",
+    "wpackagist-plugin/blob-mimes": "1.3.20",
+    "wpackagist-plugin/enable-media-replace": "4.1.5",
+    "wpackagist-plugin/koko-analytics": "1.3.12",
+    "wpackagist-plugin/parsedown-party": "1.2.1",
+    "wpackagist-plugin/redirection": "5.5.0",
+    "wpackagist-plugin/regenerate-thumbnails": "3.1.6",
+    "wpackagist-plugin/tablepress": "1.14",
+    "wpackagist-plugin/user-activation-keys": "4.6",
+    "wpackagist-plugin/wp-fail2ban-redux": "0.9.1",
+    "wpackagist-plugin/wp-quicklatex": "3.8.8"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9",
+    "pressbooks/coding-standards": "^1.1"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "web/wp"
+  },
+  "scripts": {
+    "test": [
+      "PB_PLUGIN=${PB_PLUGIN:-pressbooks}; vendor/bin/phpunit --configuration web/app/plugins/$PB_PLUGIN/phpunit.xml",
+      "@standards"
+    ],
+    "standards": [
+      "PB_PLUGIN=${PB_PLUGIN:-pressbooks}; vendor/bin/phpcs --standard=web/app/plugins/$PB_PLUGIN/phpcs.ruleset.xml web/app/plugins/$PB_PLUGIN/*.php web/app/plugins/$PB_PLUGIN/inc/ web/app/plugins/$PB_PLUGIN/bin/"
+    ],
+    "fix": [
+      "PB_PLUGIN=${PB_PLUGIN:-pressbooks}; vendor/bin/phpcbf --standard=web/app/plugins/$PB_PLUGIN/phpcs.ruleset.xml web/app/plugins/$PB_PLUGIN/*.php web/app/plugins/$PB_PLUGIN/inc/ web/app/plugins/$PB_PLUGIN/bin/"
+    ],
+    "readme": [
+      "PB_PLUGIN=${PB_PLUGIN:-pressbooks}; vendor/bin/wp2md -i web/app/plugins/$PB_PLUGIN/readme.txt -o  web/app/plugins/$PB_PLUGIN/README.md"
+    ],
+    "test-theme": [
+      "PB_THEME=${PB_THEME:-pressbooks-book}; vendor/bin/phpunit --configuration web/app/themes/$PB_THEME/phpunit.xml",
+      "@standards-theme"
+    ],
+    "standards-theme": [
+      "PB_THEME=${PB_THEME:-pressbooks-book}; vendor/bin/phpcs --standard=web/app/themes/$PB_THEME/phpcs.ruleset.xml web/app/themes/$PB_THEME/*.php web/app/themes/$PB_THEME/inc/ web/app/themes/$PB_THEME/bin/"
+    ],
+    "fix-theme": [
+      "PB_THEME=${PB_THEME:-pressbooks-book}; vendor/bin/phpcbf --standard=web/app/themes/$PB_THEME/phpcs.ruleset.xml web/app/themes/$PB_THEME/*.php web/app/themes/$PB_THEME/inc/ web/app/themes/$PB_THEME/bin/"
+    ]
+  }
+}
