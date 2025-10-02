@@ -1,0 +1,13 @@
+version: 2
+updates:
+  # Dev Branch Configuration
+  - package-ecosystem: composer
+    directory: /
+    schedule:
+      interval: weekly
+    target-branch: dev
+    allow:
+      - dependency-type: direct
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]

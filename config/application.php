@@ -160,7 +160,6 @@ Config::define('BLOG_ID_CURRENT_SITE', 1);
 /**
  * Redis ElastiCache Settings
  */
-
 Config::define('WP_REDIS_CONFIG', array(
     'token' => env('WP_REDIS_TOKEN'),
     'host' => env('WP_REDIS_HOST'),
@@ -176,24 +175,6 @@ Config::define('WP_REDIS_CONFIG', array(
 ));
 
 Config::define('WP_REDIS_DISABLED', false);
-
-/**
- * Sentry integration
- */
-Config::define('ENABLE_SENTRY', env('ENABLE_SENTRY') ? env('ENABLE_SENTRY') : '0');
-if ( Config::get('ENABLE_SENTRY') === '1' ) {
-    Config::define(
-        'WP_SENTRY_PHP_DSN',
-        ( env( 'SENTRY_INITIALIZE_PHP' ) && env( 'SENTRY_INITIALIZE_PHP' ) === '1' ) ? env('SENTRY_DSN') : null
-    );
-    Config::define(
-        'WP_SENTRY_BROWSER_DSN',
-        env( 'SENTRY_INITIALIZE_JAVASCRIPT' ) && env( 'SENTRY_INITIALIZE_JAVASCRIPT' ) === '1' ? env('SENTRY_DSN') : null
-    );
-    Config::define('WP_SENTRY_SEND_DEFAULT_PII', false);
-    Config::define('WP_SENTRY_ENV', env('PB_SERVER_NAME') . '-' . env('REGION') . '-' . env('WP_ENV') );
-    Config::define('WP_SENTRY_BROWSER_TRACES_SAMPLE_RATE', env('SENTRY_TRACE_SAMPLE_RATE') ? env('SENTRY_TRACE_SAMPLE_RATE') : '0.5');
-}
 
 /**
  * Pressbooks Settings END
