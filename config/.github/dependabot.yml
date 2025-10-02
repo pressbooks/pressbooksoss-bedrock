@@ -1,6 +1,6 @@
 version: 2
 updates:
-  # Dev Branch Configuration
+  # Branch Configuration
   - package-ecosystem: composer
     directory: /
     schedule:
