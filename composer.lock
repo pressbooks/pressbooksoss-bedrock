@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "632fdcd1325efa58e5f4365bf33b6a53",
+    "content-hash": "2d8d277466fc6c9872f594330abf6b00",
     "packages": [
         {
             "name": "apereo/phpcas",
@@ -7094,15 +7094,15 @@
         },
         {
             "name": "wpackagist-plugin/koko-analytics",
-            "version": "1.8.6",
+            "version": "2.0.18",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/koko-analytics/",
-                "reference": "tags/1.8.6"
+                "reference": "tags/2.0.18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/koko-analytics.1.8.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/koko-analytics.2.0.18.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"

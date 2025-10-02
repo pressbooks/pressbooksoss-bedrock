@@ -73,7 +73,7 @@
     "wpackagist-plugin/blob-mimes": "1.4.2",
     "wpackagist-plugin/enable-media-replace": "4.1.7",
     "wpackagist-plugin/h5p": "1.16.0",
-    "wpackagist-plugin/koko-analytics": "1.8.6",
+    "wpackagist-plugin/koko-analytics": "2.0.18",
     "wpackagist-plugin/parsedown-party": "1.2.1",
     "wpackagist-plugin/redirection": "5.5.2",
     "wpackagist-plugin/redis-cache": "2.7.0",
