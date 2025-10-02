@@ -11,10 +11,3 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
-    groups:
-      # Update all dependencies except pressbooks/* (dev)
-      all-except-pressbooks-dev:
-        patterns:
-          - "*"
-        exclude-patterns:
-          - "pressbooks/*"
