@@ -116,19 +116,17 @@ ini_set('display_errors', '0');
 /**
  * Pressbooks Settings BEGIN
  */
-Config::define('PB_EPUBCHECK_COMMAND', '/usr/bin/java -jar /opt/epubcheck/epubcheck.jar');
+if (env('PB_PRINCE_COMMAND')) {
+    Config::define('PB_PRINCE_COMMAND', env('PB_PRINCE_COMMAND'));
+}
+
 if (env('DOCRAPTOR_API_KEY')) {
     Config::define('DOCRAPTOR_API_KEY', env('DOCRAPTOR_API_KEY'));
 }
-if (env('STRIPE_SK')) {
-    Config::define('STRIPE_SK', env('STRIPE_SK'));
- }
-if (env('STRIPE_PK')) {
-    Config::define('STRIPE_PK', env('STRIPE_PK'));
-}
-if (env('WPCOM_API_KEY')) {
-    Config::define('WPCOM_API_KEY', env('WPCOM_API_KEY'));
-}
+
+Config::define( 'PB_EPUBCHECK_COMMAND', '/usr/bin/java -jar /opt/epubcheck/epubcheck.jar' );
+Config::define( 'PB_XMLLINT_COMMAND', '/usr/bin/xmllint' );
+
 if (env('PHP_SAML_SP_CERT_PATH')) {
     Config::define('PHP_SAML_SP_CERT_PATH', env('PHP_SAML_SP_CERT_PATH'));
 }
