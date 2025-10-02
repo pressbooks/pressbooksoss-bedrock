@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d8d277466fc6c9872f594330abf6b00",
+    "content-hash": "60c9a7ce91e8fcb919ecf1c2f4c0c784",
     "packages": [
         {
             "name": "apereo/phpcas",
@@ -7184,15 +7184,15 @@
         },
         {
             "name": "wpackagist-plugin/tablepress",
-            "version": "2.4.4",
+            "version": "3.2.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/tablepress/",
-                "reference": "tags/2.4.4"
+                "reference": "tags/3.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/tablepress.2.4.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/tablepress.3.2.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"

@@ -78,7 +78,7 @@
     "wpackagist-plugin/redirection": "5.5.2",
     "wpackagist-plugin/redis-cache": "2.7.0",
     "wpackagist-plugin/regenerate-thumbnails": "3.1.6",
-    "wpackagist-plugin/tablepress": "2.4.4",
+    "wpackagist-plugin/tablepress": "3.2.3",
     "wpackagist-plugin/user-activation-keys": "4.6",
     "wpackagist-plugin/wp-quicklatex": "3.8.8"
   },
