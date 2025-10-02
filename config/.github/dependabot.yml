@@ -5,7 +5,7 @@ updates:
     directory: /
     schedule:
       interval: weekly
-    target-branch: dev
+    target-branch: production
     allow:
       - dependency-type: direct
     ignore:
