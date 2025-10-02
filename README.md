@@ -7,13 +7,12 @@ This repo contains a Bedrock installation for Pressbooks. In includes pressbooks
 - [Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
 - For PDF exports: PrinceXML or [Docraptor](https://docraptor.com/), a SaaS version of PrinceXML. Note: PrinceXML is not free software; see [their license agreement](https://www.princexml.com/license/). If you intend to use Prince for commercial purposes, you should [purchase a license](https://www.princexml.com/purchase/).
 - For the Cover Generator feature, install:
-    Ghostscript: `sudo apt-get install ghostscript`
-    ImageMagick: `sudo apt-get install imagemagick`
-    PdfToPpm and PdfInfo: `sudo apt-get install poppler-utils`
+    - Ghostscript: `sudo apt-get install ghostscript`
+    - ImageMagick: `sudo apt-get install imagemagick`
+    - PdfToPpm and PdfInfo: `sudo apt-get install poppler-utils`
 - To produce EPUB exports, install EPUBCheck, an EPUB validation utility used in the export process: `sudo apt-get install epubcheck`.
 - To produce XML exports, install xmllint: `sudo apt-get install libxml2-utils`
-- To include math expressions in your export files, install and host the [pb-mathjax](https://github.com/pressbooks/pb-mathjax/?tab=readme-ov-file#deploy-to-a-production-server) service [additional community recommended install instructions](https://pressbooks.community/t/improved-support-for-mathematical-scientific-notation/4156/4) or install and network activate the third party WordPress plugin WP QuickLaTeX.
-
+- To include math expressions in your export files, [install the pb-mathjax service](https://github.com/pressbooks/pb-mathjax/?tab=readme-ov-file#deploy-to-a-production-server) or activate the third-party WP QuickLaTeX plugin.
 
 ## Installing Pressbooks on a Production Server
 
@@ -36,8 +35,9 @@ This repo contains a Bedrock installation for Pressbooks. In includes pressbooks
 - `AUTH_KEY`, `SECURE_AUTH_KEY`, `LOGGED_IN_KEY`, `NONCE_KEY`, `AUTH_SALT`, `SECURE_AUTH_SALT`, `LOGGED_IN_SALT`, `NONCE_SALT`
   - Generate with [wp-cli-dotenv-command](https://github.com/aaemnnosttv/wp-cli-dotenv-command)
   - Generate with [our WordPress salts generator](https://roots.io/salts.html)
-- `DOCRAPTOR_API_KEY` - If you choose to use DocRaptor to generate PDFs, enter the API key obtained from them here.
-- `PB_MATHJAX_URL` - [PB-MathJax](https://github.com/pressbooks/pb-mathjax) is a hostable microservice that can generate SVG or PNG images of math expressions for use in EPUB and PDF exports. If you self-host, provide the URL of your hosted service here.
+- `PB_PRINCE_COMMAND` - If you chose to install a licensed version PrinceXML on your server, uncomment this line in your .env file.
+- `DOCRAPTOR_API_KEY` - If you chose to use DocRaptor to generate PDFs, enter the API key obtained from them in your .env file.
+- `PB_MATHJAX_URL` - If you installed PB-MathJax, provide the URL of your hosted service in your .env file.
 
 7. Activate Pressbooks and any desired themes and plugins via WP CLI, e.g. `wp plugin activate pressbooks --network`
 8. Log in to your new Pressbooks network at `https://example.com/wp/wp-login.php`
