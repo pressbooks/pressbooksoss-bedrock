@@ -55,7 +55,7 @@
     "php": ">=8.2",
     "composer/installers": "2.3.0",
     "hypothesis/wp-hypothesis": "0.7.4",
-    "pressbooks/pressbooks": "6.32.0",
+    "pressbooks/pressbooks": "6.33.0",
     "pressbooks/pressbooks-aldine": "1.23.3",
     "pressbooks/pressbooks-book": "2.30.2",
     "pressbooks/pressbooks-cas-sso": "2.5.0",
