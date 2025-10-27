@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "60c9a7ce91e8fcb919ecf1c2f4c0c784",
+    "content-hash": "f27273f3748509e65f31cada91ac7a0a",
     "packages": [
         {
             "name": "apereo/phpcas",
@@ -133,16 +133,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.356.31",
+            "version": "3.357.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "3e74e822177581c90faed3d607b022af9962bd00"
+                "reference": "7020346835259ad07ce320b04bea912055d4a5bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/3e74e822177581c90faed3d607b022af9962bd00",
-                "reference": "3e74e822177581c90faed3d607b022af9962bd00",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/7020346835259ad07ce320b04bea912055d4a5bc",
+                "reference": "7020346835259ad07ce320b04bea912055d4a5bc",
                 "shasum": ""
             },
             "require": {
@@ -224,9 +224,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.31"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.357.2"
             },
-            "time": "2025-10-02T18:59:02+00:00"
+            "time": "2025-10-24T19:16:19+00:00"
         },
         {
             "name": "carbonphp/carbon-doctrine-types",
@@ -3395,16 +3395,16 @@
         },
         {
             "name": "pressbooks/pressbooks",
-            "version": "6.32.0",
+            "version": "6.34.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pressbooks/pressbooks.git",
-                "reference": "a4ab87ad08ef8ae2c1eddf985c79e8dce5bcaaa0"
+                "reference": "ab2b1ca6ad325f294022380f713f6787f3c48966"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pressbooks/pressbooks/zipball/a4ab87ad08ef8ae2c1eddf985c79e8dce5bcaaa0",
-                "reference": "a4ab87ad08ef8ae2c1eddf985c79e8dce5bcaaa0",
+                "url": "https://api.github.com/repos/pressbooks/pressbooks/zipball/ab2b1ca6ad325f294022380f713f6787f3c48966",
+                "reference": "ab2b1ca6ad325f294022380f713f6787f3c48966",
                 "shasum": ""
             },
             "require": {
@@ -3435,7 +3435,7 @@
                 "pressbooks/mix": "^2.1",
                 "pressbooks/pb-cli": "^3",
                 "scssphp/scssphp": "^1.11.0",
-                "snordian/h5p-extractor": "dev-master",
+                "snordian/h5p-extractor": "^0.4.1",
                 "symfony/process": "^6.0",
                 "vanilla/htmlawed": "^2.2",
                 "vlucas/phpdotenv": "^5.4"
@@ -3482,7 +3482,7 @@
                 "issues": "https://github.com/pressbooks/pressbooks/issues/",
                 "source": "https://github.com/pressbooks/pressbooks/"
             },
-            "time": "2025-09-25T15:23:24+00:00"
+            "time": "2025-10-22T20:53:34+00:00"
         },
         {
             "name": "pressbooks/pressbooks-aldine",
@@ -4830,22 +4830,21 @@
         },
         {
             "name": "snordian/h5p-extractor",
-            "version": "dev-master",
+            "version": "0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/otacke/H5PExtractor.git",
-                "reference": "8cb1175837ec306df29e73ab37ede2da97bc7c94"
+                "reference": "9b8dcb11eb472ef687bdfb4f5170a2b74e685509"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/otacke/H5PExtractor/zipball/8cb1175837ec306df29e73ab37ede2da97bc7c94",
-                "reference": "8cb1175837ec306df29e73ab37ede2da97bc7c94",
+                "url": "https://api.github.com/repos/otacke/H5PExtractor/zipball/9b8dcb11eb472ef687bdfb4f5170a2b74e685509",
+                "reference": "9b8dcb11eb472ef687bdfb4f5170a2b74e685509",
                 "shasum": ""
             },
             "require": {
                 "h5p/h5p-core": "^1.26.0"
             },
-            "default-branch": true,
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -4864,9 +4863,9 @@
             ],
             "support": {
                 "issues": "https://github.com/otacke/H5PExtractor/issues",
-                "source": "https://github.com/otacke/H5PExtractor/tree/master"
+                "source": "https://github.com/otacke/H5PExtractor/tree/0.4.1"
             },
-            "time": "2025-09-10T14:25:25+00:00"
+            "time": "2025-10-03T07:00:15+00:00"
         },
         {
             "name": "spatie/color",
