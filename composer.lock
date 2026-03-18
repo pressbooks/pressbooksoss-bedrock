@@ -3538,16 +3538,16 @@
         },
         {
             "name": "pressbooks/pressbooks-book",
-            "version": "2.30.2",
+            "version": "2.30.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pressbooks/pressbooks-book.git",
-                "reference": "6e07006d54a26e20d2ec339811258bec9c4c5957"
+                "reference": "3b595dbc4cab4520fd5ff862dfcad8600b42c2db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pressbooks/pressbooks-book/zipball/6e07006d54a26e20d2ec339811258bec9c4c5957",
-                "reference": "6e07006d54a26e20d2ec339811258bec9c4c5957",
+                "url": "https://api.github.com/repos/pressbooks/pressbooks-book/zipball/3b595dbc4cab4520fd5ff862dfcad8600b42c2db",
+                "reference": "3b595dbc4cab4520fd5ff862dfcad8600b42c2db",
                 "shasum": ""
             },
             "require": {
@@ -3580,9 +3580,9 @@
             ],
             "support": {
                 "issues": "https://github.com/pressbooks/pressbooks-book/issues",
-                "source": "https://github.com/pressbooks/pressbooks-book/tree/2.30.2"
+                "source": "https://github.com/pressbooks/pressbooks-book/tree/2.30.3"
             },
-            "time": "2025-09-11T15:17:12+00:00"
+            "time": "2025-10-07T19:22:16+00:00"
         },
         {
             "name": "pressbooks/pressbooks-cas-sso",
