@@ -3760,16 +3760,16 @@
         },
         {
             "name": "pressbooks/pressbooks-network-catalog",
-            "version": "1.3.8",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pressbooks/pressbooks-network-catalog.git",
-                "reference": "c607f07b6497b74e83ce190de1e4674c367076d8"
+                "reference": "e9bebfdc69e27574488c525bfb0c627f6adbe56f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pressbooks/pressbooks-network-catalog/zipball/c607f07b6497b74e83ce190de1e4674c367076d8",
-                "reference": "c607f07b6497b74e83ce190de1e4674c367076d8",
+                "url": "https://api.github.com/repos/pressbooks/pressbooks-network-catalog/zipball/e9bebfdc69e27574488c525bfb0c627f6adbe56f",
+                "reference": "e9bebfdc69e27574488c525bfb0c627f6adbe56f",
                 "shasum": ""
             },
             "require": {
@@ -3798,9 +3798,9 @@
             "description": "Add a searchable, filterable catalog to the Pressbooks Aldine theme",
             "support": {
                 "issues": "https://github.com/pressbooks/pressbooks-network-catalog/issues",
-                "source": "https://github.com/pressbooks/pressbooks-network-catalog/tree/1.3.8"
+                "source": "https://github.com/pressbooks/pressbooks-network-catalog/tree/1.5.2"
             },
-            "time": "2025-05-13T19:18:45+00:00"
+            "time": "2026-02-18T17:01:00+00:00"
         },
         {
             "name": "pressbooks/pressbooks-saml-sso",
