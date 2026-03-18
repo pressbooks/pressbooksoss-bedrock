@@ -1,11 +1,11 @@
 version: 2
 updates:
-  # Dev Branch Configuration
+  # Branch Configuration
   - package-ecosystem: composer
     directory: /
     schedule:
       interval: weekly
-    target-branch: dev
+    target-branch: production
     allow:
       - dependency-type: direct
     ignore:

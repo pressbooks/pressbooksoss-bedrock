@@ -1,76 +1,26 @@
-<p align="center">
-  <a href="https://roots.io/bedrock/">
-    <img alt="Bedrock" src="https://cdn.roots.io/app/uploads/logo-bedrock.svg" height="100">
-  </a>
-</p>
-
-<p align="center">
-  <a href="LICENSE.md">
-    <img alt="MIT License" src="https://img.shields.io/github/license/roots/bedrock?color=%23525ddc&style=flat-square" />
-  </a>
-
-  <a href="https://packagist.org/packages/roots/bedrock">
-    <img alt="Packagist" src="https://img.shields.io/packagist/v/roots/bedrock.svg?style=flat-square" />
-  </a>
-
-  <a href="https://github.com/roots/bedrock/actions/workflows/ci.yml">
-    <img alt="Build Status" src="https://img.shields.io/github/workflow/status/roots/bedrock/CI?style=flat-square" />
-  </a>
-
-  <a href="https://twitter.com/rootswp">
-    <img alt="Follow Roots" src="https://img.shields.io/twitter/follow/rootswp.svg?style=flat-square&color=1da1f2" />
-  </a>
-</p>
-
-<p align="center">
-  <strong>A modern WordPress stack</strong>
-</p>
-
-<p align="center">
-  <a href="https://roots.io/"><strong><code>Website</code></strong></a> &nbsp;&nbsp; <a href="https://docs.roots.io/bedrock/master/installation/"><strong><code>Documentation</code></strong></a> &nbsp;&nbsp; <a href="https://github.com/roots/bedrock/releases"><strong><code>Releases</code></strong></a> &nbsp;&nbsp; <a href="https://discourse.roots.io/"><strong><code>Support</code></strong></a>
-</p>
-
-## Supporting
-
-**Bedrock** is an open source project and completely free to use.
-
-However, the amount of effort needed to maintain and develop new features and products within the Roots ecosystem is not sustainable without proper financial backing. If you have the capability, please consider donating using the links below:
-
-<div align="center">
-
-[![Sponsor on GitHub](https://img.shields.io/static/v1?label=sponsor&message=%E2%9D%A4&logo=GitHub&style=flat-square)](https://github.com/sponsors/roots)
-[![Sponsor on Patreon](https://img.shields.io/badge/sponsor-patreon-orange.svg?style=flat-square&logo=patreon")](https://www.patreon.com/rootsdev)
-[![Donate via PayPal](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square&logo=paypal)](https://www.paypal.me/rootsdev)
-
-</div>
-
-## Overview
-
-Bedrock is a modern WordPress stack that helps you get started with the best development tools and project structure.
-
-Much of the philosophy behind Bedrock is inspired by the [Twelve-Factor App](http://12factor.net/) methodology including the [WordPress specific version](https://roots.io/twelve-factor-wordpress/).
-
-## Features
-
-- Better folder structure
-- Dependency management with [Composer](https://getcomposer.org)
-- Easy WordPress configuration with environment specific files
-- Environment variables with [Dotenv](https://github.com/vlucas/phpdotenv)
-- Autoloader for mu-plugins (use regular plugins as mu-plugins)
-- Enhanced security (separated web root and secure passwords with [wp-password-bcrypt](https://github.com/roots/wp-password-bcrypt))
+This repo contains a Bedrock installation for Pressbooks. In includes pressbooks/pressbooks, several themes, and open source plugins. It is intended to be used on a production server.
 
 ## Requirements
 
-- PHP >= 7.4
-- Composer - [Install](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
+- PHP >= 8.2
+- [WP CLI](https://wp-cli.org/#installing)
+- [Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
+- For the Cover Generator feature, install:
+    - Ghostscript: `sudo apt-get install ghostscript`
+    - ImageMagick: `sudo apt-get install imagemagick`
+    - PdfToPpm and PdfInfo: `sudo apt-get install poppler-utils`
+- For PDF exports: PrinceXML or [Docraptor](https://docraptor.com/), a SaaS version of PrinceXML. Note: PrinceXML is not free software; see [their license agreement](https://www.princexml.com/license/). If you intend to use Prince for commercial purposes, you should [purchase a license](https://www.princexml.com/purchase/).
+- To produce EPUB exports, install EPUBCheck, an EPUB validation utility used in the export process: `sudo apt-get install epubcheck`.
+- To produce XML exports, install xmllint: `sudo apt-get install libxml2-utils`
+- To include math expressions in your export files, [install the pb-mathjax service](https://github.com/pressbooks/pb-mathjax/?tab=readme-ov-file#deploy-to-a-production-server) or activate the third-party WP QuickLaTeX plugin.
 
-## Installation
+## Installing Pressbooks on a Production Server
 
-1. Create a new project:
-   ```sh
-   $ composer create-project roots/bedrock
-   ```
-2. Update environment variables in the `.env` file. Wrap values that may contain non-alphanumeric characters with quotes, or they may be incorrectly parsed.
+1. Install WP CLI, Composer, and all required server dependencies 
+2. Setup the document root on your webserver to Bedrock's `web` folder: `/path/to/site/web/`
+3. Checkout this branch and run `composer install`.
+4. Copy the provided .env.example file to .env: `cp .env.example .env` 
+5. Update the relevant environment variables in your new `.env` file. Wrap values that may contain non-alphanumeric characters with quotes, or they may be incorrectly parsed.
 
 - Database variables
   - `DB_NAME` - Database name
@@ -84,23 +34,22 @@ Much of the philosophy behind Bedrock is inspired by the [Twelve-Factor App](htt
 - `AUTH_KEY`, `SECURE_AUTH_KEY`, `LOGGED_IN_KEY`, `NONCE_KEY`, `AUTH_SALT`, `SECURE_AUTH_SALT`, `LOGGED_IN_SALT`, `NONCE_SALT`
   - Generate with [wp-cli-dotenv-command](https://github.com/aaemnnosttv/wp-cli-dotenv-command)
   - Generate with [our WordPress salts generator](https://roots.io/salts.html)
+- `PB_PRINCE_COMMAND` - If you chose to install a licensed version PrinceXML on your server, uncomment this line in your .env file.
+- `DOCRAPTOR_API_KEY` - If you chose to use DocRaptor to generate PDFs, enter the API key obtained from them in your .env file.
+- `PB_MATHJAX_URL` - If you installed PB-MathJax, provide the URL of your hosted service in your .env file.
 
-3. Add theme(s) in `web/app/themes/` as you would for a normal WordPress site
-4. Set the document root on your webserver to Bedrock's `web` folder: `/path/to/site/web/`
-5. Access WordPress admin at `https://example.com/wp/wp-admin/`
+6. Install [WordPress multisite via CLI command](https://developer.wordpress.org/cli/commands/core/multisite-install/), replacing the example values provided here with your desired values: `wp core multisite-install --url="https://example.com" --title="Your Network Title" --admin_user="username" --admin_password="password" --admin_email="youremail@example.com"`
+7. Activate Pressbooks and any desired themes and plugins via WP CLI, e.g. `wp plugin activate pressbooks --network`
+8. Log in to your new Pressbooks network at `https://example.com/wp/wp-login.php`
 
-## Bedrock sponsors
+## About Bedrock
+[Bedrock](https://roots.io/bedrock/) is a modern WordPress stack that helps you get started with the best development tools and project structure. Much of the philosophy behind Bedrock is inspired by the [Twelve-Factor App](http://12factor.net/) methodology including the [WordPress specific version](https://roots.io/twelve-factor-wordpress/). Bedrock includes:
 
-Help support our open-source development efforts [becoming a GitHub sponsor](https://github.com/sponsors/roots) or [patron](https://www.patreon.com/rootsdev).
+- Better folder structure
+- Dependency management with [Composer](https://getcomposer.org)
+- Easy WordPress configuration with environment specific files
+- Environment variables with [Dotenv](https://github.com/vlucas/phpdotenv)
+- Autoloader for mu-plugins (use regular plugins as mu-plugins)
+- Enhanced security (separated web root)
 
-<a href="https://k-m.com/"><img src="https://cdn.roots.io/app/uploads/km-digital.svg" alt="KM Digital" width="200" height="150"></a> <a href="https://carrot.com/"><img src="https://cdn.roots.io/app/uploads/carrot.svg" alt="Carrot" width="200" height="150"></a> <a href="https://www.c21redwood.com/"><img src="https://cdn.roots.io/app/uploads/c21redwood.svg" alt="C21 Redwood Realty" width="200" height="150"></a> <a href="https://wordpress.com/"><img src="https://cdn.roots.io/app/uploads/wordpress.svg" alt="WordPress.com" width="200" height="150"></a> <a href="https://pantheon.io/"><img src="https://cdn.roots.io/app/uploads/pantheon.svg" alt="Pantheon" width="200" height="150"></a>
-
-## Community
-
-Keep track of development and community news.
-
-- Join us on Roots Slack by becoming a [GitHub sponsor](https://github.com/sponsors/roots) or [patron](https://www.patreon.com/rootsdev)
-- Participate on the [Roots Discourse](https://discourse.roots.io/)
-- Follow [@rootswp on Twitter](https://twitter.com/rootswp)
-- Read and subscribe to the [Roots Blog](https://roots.io/blog/)
-- Subscribe to the [Roots Newsletter](https://roots.io/subscribe/)
+The core Bedrock project is maintained by [Roots](https://roots.io/about/), a small team of open source developers who have been publishing tools for WordPress developers since 2011. You can support their work by purchasing [Radicle](https://roots.io/radicle/), their recommended WordPress stack, or by [sponsoring them](https://github.com/sponsors/roots) on GitHub. 

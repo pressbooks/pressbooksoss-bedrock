@@ -27,3 +27,12 @@ auth.json
 
 # WP-CLI
 wp-cli.local.yml
+
+.idea/.gitignore
+.idea/modules.xml
+.idea/php.xml
+.idea/phpspec.xml
+.idea/phpunit.xml
+.idea/pressbooksoss-bedrock.iml
+.idea/vcs.xml
+.idea/inspectionProfiles/Project_Default.xml
