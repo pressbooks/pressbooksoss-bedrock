@@ -63,7 +63,7 @@
     "pressbooks/pressbooks-donham": "2.1.1",
     "pressbooks/pressbooks-jacobs": "1.3.1",
     "pressbooks/pressbooks-network-catalog": "1.5.2",
-    "pressbooks/pressbooks-saml-sso": "2.5.3",
+    "pressbooks/pressbooks-saml-sso": "2.7.0",
     "roots/bedrock-autoloader": "1.0.4",
     "roots/bedrock-disallow-indexing": "2.0.0",
     "roots/multisite-url-fixer": "1.1.0",
