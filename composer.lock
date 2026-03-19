@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9d93b9a79f92c7aec5342cd0eda83c47",
+    "content-hash": "5f5583d669ddc9b4950afb1ef90726fa",
     "packages": [
         {
             "name": "apereo/phpcas",
@@ -637,6 +637,123 @@
                 }
             ],
             "time": "2025-08-10T19:31:58+00:00"
+        },
+        {
+            "name": "erusev/parsedown",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/erusev/parsedown.git",
+                "reference": "96baaad00f71ba04d76e45b4620f54d3beabd6f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/96baaad00f71ba04d76e45b4620f54d3beabd6f7",
+                "reference": "96baaad00f71ba04d76e45b4620f54d3beabd6f7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.5|^8.5|^9.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Parsedown": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emanuil Rusev",
+                    "email": "hello@erusev.com",
+                    "homepage": "http://erusev.com"
+                }
+            ],
+            "description": "Parser for Markdown.",
+            "homepage": "http://parsedown.org",
+            "keywords": [
+                "markdown",
+                "parser"
+            ],
+            "support": {
+                "issues": "https://github.com/erusev/parsedown/issues",
+                "source": "https://github.com/erusev/parsedown/tree/1.8.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/erusev",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-02-16T11:41:01+00:00"
+        },
+        {
+            "name": "erusev/parsedown-extra",
+            "version": "0.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/erusev/parsedown-extra.git",
+                "reference": "5b5b9b9d000792c7ac631aec23a6688e0b6d3dc5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/erusev/parsedown-extra/zipball/5b5b9b9d000792c7ac631aec23a6688e0b6d3dc5",
+                "reference": "5b5b9b9d000792c7ac631aec23a6688e0b6d3dc5",
+                "shasum": ""
+            },
+            "require": {
+                "erusev/parsedown": "^1.8",
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "ext-mbstring": "*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.5|^8.5|^9.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ParsedownExtra": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emanuil Rusev",
+                    "email": "hello@erusev.com",
+                    "homepage": "https://erusev.com"
+                }
+            ],
+            "description": "An extension of Parsedown that adds support for Markdown Extra.",
+            "homepage": "https://github.com/erusev/parsedown-extra",
+            "keywords": [
+                "markdown",
+                "markdown extra",
+                "parsedown",
+                "parser"
+            ],
+            "support": {
+                "issues": "https://github.com/erusev/parsedown-extra/issues",
+                "source": "https://github.com/erusev/parsedown-extra/tree/0.9.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/erusev",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-02-16T13:06:37+00:00"
         },
         {
             "name": "fale/isbn",
@@ -2638,6 +2755,95 @@
             "time": "2026-03-17T16:40:11+00:00"
         },
         {
+            "name": "league/html-to-markdown",
+            "version": "5.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/html-to-markdown.git",
+                "reference": "0b4066eede55c48f38bcee4fb8f0aa85654390fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/html-to-markdown/zipball/0b4066eede55c48f38bcee4fb8f0aa85654390fd",
+                "reference": "0b4066eede55c48f38bcee4fb8f0aa85654390fd",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-xml": "*",
+                "php": "^7.2.5 || ^8.0"
+            },
+            "require-dev": {
+                "mikehaertl/php-shellcommand": "^1.1.0",
+                "phpstan/phpstan": "^1.8.8",
+                "phpunit/phpunit": "^8.5 || ^9.2",
+                "scrutinizer/ocular": "^1.6",
+                "unleashedtech/php-coding-standard": "^2.7 || ^3.0",
+                "vimeo/psalm": "^4.22 || ^5.0"
+            },
+            "bin": [
+                "bin/html-to-markdown"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\HTMLToMarkdown\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Colin O'Dell",
+                    "email": "colinodell@gmail.com",
+                    "homepage": "https://www.colinodell.com",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Nick Cernis",
+                    "email": "nick@cern.is",
+                    "homepage": "http://modernnerd.net",
+                    "role": "Original Author"
+                }
+            ],
+            "description": "An HTML-to-markdown conversion helper for PHP",
+            "homepage": "https://github.com/thephpleague/html-to-markdown",
+            "keywords": [
+                "html",
+                "markdown"
+            ],
+            "support": {
+                "issues": "https://github.com/thephpleague/html-to-markdown/issues",
+                "source": "https://github.com/thephpleague/html-to-markdown/tree/5.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://www.colinodell.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.paypal.me/colinpodell/10.00",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/colinodell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/league/html-to-markdown",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-07-12T21:21:09+00:00"
+        },
+        {
             "name": "masterminds/html5",
             "version": "2.10.0",
             "source": {
@@ -3406,6 +3612,64 @@
             "time": "2025-11-19T19:57:02+00:00"
         },
         {
+            "name": "pressbooks/parsedown-party",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pressbooks/parsedown-party.git",
+                "reference": "4ab9c51fd11854c825a1ee11a2ad613a4c4072a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pressbooks/parsedown-party/zipball/4ab9c51fd11854c825a1ee11a2ad613a4c4072a8",
+                "reference": "4ab9c51fd11854c825a1ee11a2ad613a4c4072a8",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^2.1",
+                "erusev/parsedown-extra": "^0.9",
+                "league/html-to-markdown": "^5.1",
+                "php": ">=8.3"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.10.6",
+                "mockery/mockery": "^1.6",
+                "yoast/phpunit-polyfills": "^1.1"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "ParsedownParty\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "KIZU514",
+                    "homepage": "https://kizu514.com"
+                },
+                {
+                    "name": "Steel Wagstaff",
+                    "homepage": "https://github.com/steelwagstaff"
+                }
+            ],
+            "description": "Markdown editing for WordPress.",
+            "homepage": "https://github.com/pressbooks/parsedown-party/",
+            "keywords": [
+                "markdown",
+                "parsedown",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/pressbooks/parsedown-party/issues/",
+                "source": "https://github.com/pressbooks/parsedown-party/"
+            },
+            "time": "2026-03-11T16:59:57+00:00"
+        },
+        {
             "name": "pressbooks/pb-cli",
             "version": "3.1.0",
             "source": {
@@ -3461,16 +3725,16 @@
         },
         {
             "name": "pressbooks/pressbooks",
-            "version": "6.37.1",
+            "version": "6.37.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pressbooks/pressbooks.git",
-                "reference": "635348a27567d40c9bcee62cfb3905b2a6503516"
+                "reference": "e375f36bbed6c50da46bcd2425093d79fdd9f979"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pressbooks/pressbooks/zipball/635348a27567d40c9bcee62cfb3905b2a6503516",
-                "reference": "635348a27567d40c9bcee62cfb3905b2a6503516",
+                "url": "https://api.github.com/repos/pressbooks/pressbooks/zipball/e375f36bbed6c50da46bcd2425093d79fdd9f979",
+                "reference": "e375f36bbed6c50da46bcd2425093d79fdd9f979",
                 "shasum": ""
             },
             "require": {
@@ -3549,7 +3813,7 @@
                 "issues": "https://github.com/pressbooks/pressbooks/issues/",
                 "source": "https://github.com/pressbooks/pressbooks/"
             },
-            "time": "2026-03-18T20:26:07+00:00"
+            "time": "2026-03-18T21:58:52+00:00"
         },
         {
             "name": "pressbooks/pressbooks-aldine",
@@ -3828,20 +4092,21 @@
         },
         {
             "name": "pressbooks/pressbooks-network-catalog",
-            "version": "1.5.2",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pressbooks/pressbooks-network-catalog.git",
-                "reference": "e9bebfdc69e27574488c525bfb0c627f6adbe56f"
+                "reference": "94de6ee40b1a495fc2f636f892e47621ca855037"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pressbooks/pressbooks-network-catalog/zipball/e9bebfdc69e27574488c525bfb0c627f6adbe56f",
-                "reference": "e9bebfdc69e27574488c525bfb0c627f6adbe56f",
+                "url": "https://api.github.com/repos/pressbooks/pressbooks-network-catalog/zipball/94de6ee40b1a495fc2f636f892e47621ca855037",
+                "reference": "94de6ee40b1a495fc2f636f892e47621ca855037",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.1"
+                "php": "^8.3",
+                "pressbooks/frontend-tools": "^1.0.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.10",
@@ -3866,9 +4131,9 @@
             "description": "Add a searchable, filterable catalog to the Pressbooks Aldine theme",
             "support": {
                 "issues": "https://github.com/pressbooks/pressbooks-network-catalog/issues",
-                "source": "https://github.com/pressbooks/pressbooks-network-catalog/tree/1.5.2"
+                "source": "https://github.com/pressbooks/pressbooks-network-catalog/tree/1.6.0"
             },
-            "time": "2026-02-18T17:01:00+00:00"
+            "time": "2026-03-16T17:57:40+00:00"
         },
         {
             "name": "pressbooks/pressbooks-saml-sso",
