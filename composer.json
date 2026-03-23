@@ -17,7 +17,12 @@
     }
   ],
   "keywords": [
-    "bedrock", "roots", "wordpress", "stack", "composer", "wp"
+    "bedrock",
+    "roots",
+    "wordpress",
+    "stack",
+    "composer",
+    "wp"
   ],
   "support": {
     "issues": "https://github.com/roots/bedrock/issues",
@@ -37,50 +42,56 @@
       "php-http/discovery": true
     },
     "platform": {
-      "php": "8.2",
       "ext-redis": "3.1.1"
     }
   },
   "repositories": [
     {
-      "type": "composer",
-      "url": "https://wpackagist.org"
-    },
-    {
       "type": "vcs",
       "url": "https://github.com/lumenlearning/candela-citation"
+    },
+    {
+      "name": "wp-composer",
+      "type": "composer",
+      "url": "https://repo.wp-composer.com",
+      "only": [
+        "wp-plugin/*",
+        "wp-theme/*",
+        "roots/wordpress"
+      ]
     }
   ],
   "require": {
-    "php": ">=8.2",
+    "php": "^8.3",
     "composer/installers": "2.3.0",
-    "hypothesis/wp-hypothesis": "0.7.4",
-    "pressbooks/pressbooks": "6.34.1",
-    "pressbooks/pressbooks-aldine": "1.23.3",
-    "pressbooks/pressbooks-book": "2.30.3",
-    "pressbooks/pressbooks-cas-sso": "2.5.0",
+    "hypothesis/wp-hypothesis": "0.7.5",
+    "pressbooks/parsedown-party": "^1.3",
+    "pressbooks/pressbooks": "6.37.2",
+    "pressbooks/pressbooks-aldine": "1.25.0",
+    "pressbooks/pressbooks-book": "2.32.0",
+    "pressbooks/pressbooks-cas-sso": "2.7.0",
     "pressbooks/pressbooks-clarke": "2.4.1",
     "pressbooks/pressbooks-donham": "2.1.1",
+    "pressbooks/pressbooks-hooks": "1.0.0",
     "pressbooks/pressbooks-jacobs": "1.3.1",
-    "pressbooks/pressbooks-network-catalog": "1.5.2",
-    "pressbooks/pressbooks-saml-sso": "2.5.3",
-    "roots/bedrock-autoloader": "1.0.4",
-    "roots/bedrock-disallow-indexing": "2.0.0",
+    "pressbooks/pressbooks-network-catalog": "1.6.0",
+    "pressbooks/pressbooks-saml-sso": "2.7.0",
+    "roots/bedrock-autoloader": "1.1.0",
+    "roots/bedrock-disallow-indexing": "2.1.0",
     "roots/multisite-url-fixer": "1.1.0",
-    "roots/wordpress": "6.8.3",
+    "roots/wordpress": "6.9.4",
     "roots/wp-config": "1.0.0",
-    "vlucas/phpdotenv": "5.6.2",
-    "wpackagist-plugin/blob-mimes": "1.4.2",
-    "wpackagist-plugin/enable-media-replace": "4.1.7",
-    "wpackagist-plugin/h5p": "1.16.0",
-    "wpackagist-plugin/koko-analytics": "2.2.5",
-    "wpackagist-plugin/parsedown-party": "1.2.1",
-    "wpackagist-plugin/redirection": "5.5.2",
-    "wpackagist-plugin/redis-cache": "2.7.0",
-    "wpackagist-plugin/regenerate-thumbnails": "3.1.6",
-    "wpackagist-plugin/tablepress": "3.2.8",
-    "wpackagist-plugin/user-activation-keys": "4.6",
-    "wpackagist-plugin/wp-quicklatex": "3.8.8"
+    "vlucas/phpdotenv": "5.6.3",
+    "wp-plugin/blob-mimes": "1.4.2",
+    "wp-plugin/enable-media-replace": "4.1.8",
+    "wp-plugin/h5p": "1.17.4",
+    "wp-plugin/koko-analytics": "2.2.5",
+    "wp-plugin/redirection": "5.7.5",
+    "wp-plugin/redis-cache": "2.7.0",
+    "wp-plugin/regenerate-thumbnails": "3.1.6",
+    "wp-plugin/tablepress": "3.2.8",
+    "wp-plugin/unconfirmed": "1.3.7",
+    "wp-plugin/wp-quicklatex": "3.8.8"
   },
   "require-dev": {
     "phpunit/phpunit": "^9",
@@ -90,12 +101,17 @@
   "prefer-stable": true,
   "extra": {
     "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
-      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+      "web/app/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "web/app/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "web/app/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
     },
     "wordpress-install-dir": "web/wp"
   },
-  "scripts": {
-  }
+  "scripts": {}
 }
