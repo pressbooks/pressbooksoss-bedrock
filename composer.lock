@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe6a72b5166a9e70cc18129ca26b0677",
+    "content-hash": "f9176c3bcb8d2d2eb071f20dac3287ad",
     "packages": [
         {
             "name": "apereo/phpcas",
@@ -4126,16 +4126,16 @@
         },
         {
             "name": "pressbooks/pressbooks-network-catalog",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pressbooks/pressbooks-network-catalog.git",
-                "reference": "94de6ee40b1a495fc2f636f892e47621ca855037"
+                "reference": "f00e24ee58d504d0f6ca14ddf82384ece68ec2bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pressbooks/pressbooks-network-catalog/zipball/94de6ee40b1a495fc2f636f892e47621ca855037",
-                "reference": "94de6ee40b1a495fc2f636f892e47621ca855037",
+                "url": "https://api.github.com/repos/pressbooks/pressbooks-network-catalog/zipball/f00e24ee58d504d0f6ca14ddf82384ece68ec2bf",
+                "reference": "f00e24ee58d504d0f6ca14ddf82384ece68ec2bf",
                 "shasum": ""
             },
             "require": {
@@ -4165,9 +4165,9 @@
             "description": "Add a searchable, filterable catalog to the Pressbooks Aldine theme",
             "support": {
                 "issues": "https://github.com/pressbooks/pressbooks-network-catalog/issues",
-                "source": "https://github.com/pressbooks/pressbooks-network-catalog/tree/1.6.0"
+                "source": "https://github.com/pressbooks/pressbooks-network-catalog/tree/1.6.1"
             },
-            "time": "2026-03-16T17:57:40+00:00"
+            "time": "2026-03-24T14:36:49+00:00"
         },
         {
             "name": "pressbooks/pressbooks-saml-sso",
