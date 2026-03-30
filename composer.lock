@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe6a72b5166a9e70cc18129ca26b0677",
+    "content-hash": "a99906396fcfd232c9ff019b8a98049d",
     "packages": [
         {
             "name": "apereo/phpcas",
@@ -133,16 +133,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.373.8",
+            "version": "3.374.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "18035d80bab38c962af8580307a787bf4e15cc47"
+                "reference": "67b6b6210af47319c74c5666388d71bc1bc58276"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/18035d80bab38c962af8580307a787bf4e15cc47",
-                "reference": "18035d80bab38c962af8580307a787bf4e15cc47",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/67b6b6210af47319c74c5666388d71bc1bc58276",
+                "reference": "67b6b6210af47319c74c5666388d71bc1bc58276",
                 "shasum": ""
             },
             "require": {
@@ -224,9 +224,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.373.8"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.374.2"
             },
-            "time": "2026-03-23T18:08:22+00:00"
+            "time": "2026-03-27T18:05:55+00:00"
         },
         {
             "name": "carbonphp/carbon-doctrine-types",
@@ -3725,16 +3725,16 @@
         },
         {
             "name": "pressbooks/pressbooks",
-            "version": "6.37.2",
+            "version": "6.38.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pressbooks/pressbooks.git",
-                "reference": "e375f36bbed6c50da46bcd2425093d79fdd9f979"
+                "reference": "c6fe190a16088be21b620a3b985dd80e375f0c77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pressbooks/pressbooks/zipball/e375f36bbed6c50da46bcd2425093d79fdd9f979",
-                "reference": "e375f36bbed6c50da46bcd2425093d79fdd9f979",
+                "url": "https://api.github.com/repos/pressbooks/pressbooks/zipball/c6fe190a16088be21b620a3b985dd80e375f0c77",
+                "reference": "c6fe190a16088be21b620a3b985dd80e375f0c77",
                 "shasum": ""
             },
             "require": {
@@ -3813,7 +3813,7 @@
                 "issues": "https://github.com/pressbooks/pressbooks/issues/",
                 "source": "https://github.com/pressbooks/pressbooks/"
             },
-            "time": "2026-03-18T21:58:52+00:00"
+            "time": "2026-03-25T21:45:11+00:00"
         },
         {
             "name": "pressbooks/pressbooks-aldine",
