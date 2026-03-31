@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe6a72b5166a9e70cc18129ca26b0677",
+    "content-hash": "96b029a520fa5d4cc9faac485f8ccab1",
     "packages": [
         {
             "name": "apereo/phpcas",
@@ -133,16 +133,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.373.8",
+            "version": "3.375.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "18035d80bab38c962af8580307a787bf4e15cc47"
+                "reference": "6cfa1798c3fa0182d902eda9419dca48c86d74a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/18035d80bab38c962af8580307a787bf4e15cc47",
-                "reference": "18035d80bab38c962af8580307a787bf4e15cc47",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/6cfa1798c3fa0182d902eda9419dca48c86d74a1",
+                "reference": "6cfa1798c3fa0182d902eda9419dca48c86d74a1",
                 "shasum": ""
             },
             "require": {
@@ -224,9 +224,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.373.8"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.375.0"
             },
-            "time": "2026-03-23T18:08:22+00:00"
+            "time": "2026-03-30T19:30:55+00:00"
         },
         {
             "name": "carbonphp/carbon-doctrine-types",
@@ -3725,16 +3725,16 @@
         },
         {
             "name": "pressbooks/pressbooks",
-            "version": "6.37.2",
+            "version": "6.38.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pressbooks/pressbooks.git",
-                "reference": "e375f36bbed6c50da46bcd2425093d79fdd9f979"
+                "reference": "c6fe190a16088be21b620a3b985dd80e375f0c77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pressbooks/pressbooks/zipball/e375f36bbed6c50da46bcd2425093d79fdd9f979",
-                "reference": "e375f36bbed6c50da46bcd2425093d79fdd9f979",
+                "url": "https://api.github.com/repos/pressbooks/pressbooks/zipball/c6fe190a16088be21b620a3b985dd80e375f0c77",
+                "reference": "c6fe190a16088be21b620a3b985dd80e375f0c77",
                 "shasum": ""
             },
             "require": {
@@ -3813,7 +3813,7 @@
                 "issues": "https://github.com/pressbooks/pressbooks/issues/",
                 "source": "https://github.com/pressbooks/pressbooks/"
             },
-            "time": "2026-03-18T21:58:52+00:00"
+            "time": "2026-03-25T21:45:11+00:00"
         },
         {
             "name": "pressbooks/pressbooks-aldine",
@@ -4126,16 +4126,16 @@
         },
         {
             "name": "pressbooks/pressbooks-network-catalog",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pressbooks/pressbooks-network-catalog.git",
-                "reference": "94de6ee40b1a495fc2f636f892e47621ca855037"
+                "reference": "f00e24ee58d504d0f6ca14ddf82384ece68ec2bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pressbooks/pressbooks-network-catalog/zipball/94de6ee40b1a495fc2f636f892e47621ca855037",
-                "reference": "94de6ee40b1a495fc2f636f892e47621ca855037",
+                "url": "https://api.github.com/repos/pressbooks/pressbooks-network-catalog/zipball/f00e24ee58d504d0f6ca14ddf82384ece68ec2bf",
+                "reference": "f00e24ee58d504d0f6ca14ddf82384ece68ec2bf",
                 "shasum": ""
             },
             "require": {
@@ -4165,9 +4165,9 @@
             "description": "Add a searchable, filterable catalog to the Pressbooks Aldine theme",
             "support": {
                 "issues": "https://github.com/pressbooks/pressbooks-network-catalog/issues",
-                "source": "https://github.com/pressbooks/pressbooks-network-catalog/tree/1.6.0"
+                "source": "https://github.com/pressbooks/pressbooks-network-catalog/tree/1.6.1"
             },
-            "time": "2026-03-16T17:57:40+00:00"
+            "time": "2026-03-24T14:36:49+00:00"
         },
         {
             "name": "pressbooks/pressbooks-saml-sso",
@@ -7515,7 +7515,7 @@
                 "issues": "https://wordpress.org/support/plugin/blob-mimes",
                 "source": "https://plugins.svn.wordpress.org/blob-mimes"
             },
-            "time": "2025-09-17T03:38:00+00:00"
+            "time": "2026-03-23T19:23:21+00:00"
         },
         {
             "name": "wp-plugin/enable-media-replace",
@@ -7546,7 +7546,7 @@
                 "issues": "https://wordpress.org/support/plugin/enable-media-replace",
                 "source": "https://plugins.svn.wordpress.org/enable-media-replace"
             },
-            "time": "2026-03-03T10:21:00+00:00"
+            "time": "2026-03-23T19:23:21+00:00"
         },
         {
             "name": "wp-plugin/h5p",
@@ -7577,19 +7577,19 @@
                 "issues": "https://wordpress.org/support/plugin/h5p",
                 "source": "https://plugins.svn.wordpress.org/h5p"
             },
-            "time": "2026-03-16T13:36:00+00:00"
+            "time": "2026-03-23T19:23:21+00:00"
         },
         {
             "name": "wp-plugin/koko-analytics",
-            "version": "2.2.5",
+            "version": "2.2.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/koko-analytics/",
-                "reference": "tags/2.2.5"
+                "reference": "tags/2.2.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/koko-analytics.2.2.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/koko-analytics.2.2.6.zip"
             },
             "require": {
                 "composer/installers": "~1.0|~2.0"
@@ -7608,7 +7608,7 @@
                 "issues": "https://wordpress.org/support/plugin/koko-analytics",
                 "source": "https://plugins.svn.wordpress.org/koko-analytics"
             },
-            "time": "2026-03-18T08:54:00+00:00"
+            "time": "2026-03-23T19:23:21+00:00"
         },
         {
             "name": "wp-plugin/redirection",
@@ -7639,7 +7639,7 @@
                 "issues": "https://wordpress.org/support/plugin/redirection",
                 "source": "https://plugins.svn.wordpress.org/redirection"
             },
-            "time": "2026-03-01T07:42:00+00:00"
+            "time": "2026-03-23T19:23:21+00:00"
         },
         {
             "name": "wp-plugin/redis-cache",
@@ -7670,7 +7670,7 @@
                 "issues": "https://wordpress.org/support/plugin/redis-cache",
                 "source": "https://plugins.svn.wordpress.org/redis-cache"
             },
-            "time": "2026-01-29T16:40:00+00:00"
+            "time": "2026-03-23T19:23:21+00:00"
         },
         {
             "name": "wp-plugin/regenerate-thumbnails",
@@ -7701,7 +7701,7 @@
                 "issues": "https://wordpress.org/support/plugin/regenerate-thumbnails",
                 "source": "https://plugins.svn.wordpress.org/regenerate-thumbnails"
             },
-            "time": "2025-08-20T15:56:00+00:00"
+            "time": "2026-03-23T19:23:21+00:00"
         },
         {
             "name": "wp-plugin/tablepress",
@@ -7732,7 +7732,7 @@
                 "issues": "https://wordpress.org/support/plugin/tablepress",
                 "source": "https://plugins.svn.wordpress.org/tablepress"
             },
-            "time": "2026-03-03T04:48:00+00:00"
+            "time": "2026-03-23T19:23:21+00:00"
         },
         {
             "name": "wp-plugin/unconfirmed",
@@ -7763,7 +7763,7 @@
                 "issues": "https://wordpress.org/support/plugin/unconfirmed",
                 "source": "https://plugins.svn.wordpress.org/unconfirmed"
             },
-            "time": "2023-12-04T19:58:00+00:00"
+            "time": "2026-03-23T19:23:21+00:00"
         },
         {
             "name": "wp-plugin/wp-quicklatex",
@@ -7794,7 +7794,7 @@
                 "issues": "https://wordpress.org/support/plugin/wp-quicklatex",
                 "source": "https://plugins.svn.wordpress.org/wp-quicklatex"
             },
-            "time": "2024-06-26T03:00:00+00:00"
+            "time": "2026-03-23T19:23:21+00:00"
         }
     ],
     "packages-dev": [
