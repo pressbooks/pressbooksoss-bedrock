@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "96b029a520fa5d4cc9faac485f8ccab1",
+    "content-hash": "243db07b13e5cfdeb464f55676db1c82",
     "packages": [
         {
             "name": "apereo/phpcas",
@@ -3869,16 +3869,16 @@
         },
         {
             "name": "pressbooks/pressbooks-book",
-            "version": "2.32.0",
+            "version": "2.33.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pressbooks/pressbooks-book.git",
-                "reference": "c7083416f0af25cc52144567c2f10b7d7956e133"
+                "reference": "6e0bc3e1102206fbf8d6e6397da29ef555813bf9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pressbooks/pressbooks-book/zipball/c7083416f0af25cc52144567c2f10b7d7956e133",
-                "reference": "c7083416f0af25cc52144567c2f10b7d7956e133",
+                "url": "https://api.github.com/repos/pressbooks/pressbooks-book/zipball/6e0bc3e1102206fbf8d6e6397da29ef555813bf9",
+                "reference": "6e0bc3e1102206fbf8d6e6397da29ef555813bf9",
                 "shasum": ""
             },
             "require": {
@@ -3911,9 +3911,9 @@
             ],
             "support": {
                 "issues": "https://github.com/pressbooks/pressbooks-book/issues",
-                "source": "https://github.com/pressbooks/pressbooks-book/tree/2.32.0"
+                "source": "https://github.com/pressbooks/pressbooks-book/tree/2.33.1"
             },
-            "time": "2026-03-16T17:43:18+00:00"
+            "time": "2026-04-09T21:32:32+00:00"
         },
         {
             "name": "pressbooks/pressbooks-cas-sso",
