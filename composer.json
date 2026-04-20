@@ -67,7 +67,7 @@
     "hypothesis/wp-hypothesis": "0.7.5",
     "pressbooks/parsedown-party": "^1.3",
     "pressbooks/pressbooks": "6.38.0",
-    "pressbooks/pressbooks-aldine": "1.25.0",
+    "pressbooks/pressbooks-aldine": "1.25.1",
     "pressbooks/pressbooks-book": "2.32.0",
     "pressbooks/pressbooks-cas-sso": "2.7.0",
     "pressbooks/pressbooks-clarke": "2.4.1",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "96b029a520fa5d4cc9faac485f8ccab1",
+    "content-hash": "7d0dc189ec6ee559837c190dd72c6da8",
     "packages": [
         {
             "name": "apereo/phpcas",
@@ -3817,16 +3817,16 @@
         },
         {
             "name": "pressbooks/pressbooks-aldine",
-            "version": "1.25.0",
+            "version": "1.25.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pressbooks/pressbooks-aldine.git",
-                "reference": "ae8b2bda36847cdf226da70dc4074cbe60a43145"
+                "reference": "e269e85e8592f2192e7c065c50f6d765dd283a26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pressbooks/pressbooks-aldine/zipball/ae8b2bda36847cdf226da70dc4074cbe60a43145",
-                "reference": "ae8b2bda36847cdf226da70dc4074cbe60a43145",
+                "url": "https://api.github.com/repos/pressbooks/pressbooks-aldine/zipball/e269e85e8592f2192e7c065c50f6d765dd283a26",
+                "reference": "e269e85e8592f2192e7c065c50f6d765dd283a26",
                 "shasum": ""
             },
             "require": {
@@ -3863,9 +3863,9 @@
             "support": {
                 "forum": "https://discourse.pressbooks.org/",
                 "issues": "https://github.com/pressbooks/pressbooks-aldine/issues",
-                "source": "https://github.com/pressbooks/pressbooks-aldine/tree/1.25.0"
+                "source": "https://github.com/pressbooks/pressbooks-aldine/tree/1.25.1"
             },
-            "time": "2026-03-16T17:41:44+00:00"
+            "time": "2026-04-08T18:42:35+00:00"
         },
         {
             "name": "pressbooks/pressbooks-book",
