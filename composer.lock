@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea766f0efdff2771a328123b6fe40ed2",
+    "content-hash": "70e47c2e450d3983bdd1a9335e922294",
     "packages": [
         {
             "name": "apereo/phpcas",
@@ -4897,7 +4897,7 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "6.9.5",
+            "version": "7.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/wordpress.git",
@@ -4928,7 +4928,7 @@
             ],
             "support": {
                 "issues": "https://github.com/roots/wordpress/issues",
-                "source": "https://github.com/roots/wordpress/tree/7.0.2"
+                "source": "https://github.com/roots/wordpress/tree/7.0.4"
             },
             "funding": [
                 {
@@ -5007,23 +5007,23 @@
         },
         {
             "name": "roots/wordpress-no-content",
-            "version": "6.9.5",
+            "version": "7.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "6.9.5"
+                "reference": "7.0.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.w.org/release/wordpress-6.9.5-no-content.zip",
-                "reference": "6.9.5",
-                "shasum": "08ee0c30ca5d8151f85a8c2ab985b54ca0495668"
+                "url": "https://downloads.w.org/release/wordpress-7.0.4-no-content.zip",
+                "reference": "7.0.4",
+                "shasum": "c43ba63174abfef77d00fbc6041db0d801869e09"
             },
             "require": {
-                "php": ">= 7.2.24"
+                "php": ">= 7.4"
             },
             "provide": {
-                "wordpress/core-implementation": "6.9.5"
+                "wordpress/core-implementation": "7.0.4"
             },
             "suggest": {
                 "ext-curl": "Performs remote request operations.",
@@ -5074,7 +5074,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2026-07-17T18:39:02+00:00"
+            "time": "2026-08-12T14:47:33+00:00"
         },
         {
             "name": "roots/wp-config",
