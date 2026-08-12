@@ -84,7 +84,7 @@
     "vlucas/phpdotenv": "5.6.3",
     "wp-plugin/blob-mimes": "1.4.2",
     "wp-plugin/enable-media-replace": "4.1.8",
-    "wp-plugin/h5p": "1.17.4",
+    "wp-plugin/h5p": "1.17.9",
     "wp-plugin/koko-analytics": "2.2.6",
     "wp-plugin/redirection": "5.7.5",
     "wp-plugin/redis-cache": "2.7.0",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "70e47c2e450d3983bdd1a9335e922294",
+    "content-hash": "7df980b1265e677f4cd85de4f554ac37",
     "packages": [
         {
             "name": "apereo/phpcas",
@@ -7568,15 +7568,15 @@
         },
         {
             "name": "wp-plugin/h5p",
-            "version": "1.17.4",
+            "version": "1.17.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/h5p/",
-                "reference": "tags/1.17.4"
+                "reference": "tags/1.17.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/h5p.1.17.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/h5p.1.17.9.zip"
             },
             "require": {
                 "composer/installers": "~1.0|~2.0"
@@ -7595,7 +7595,7 @@
                 "issues": "https://wordpress.org/support/plugin/h5p",
                 "source": "https://plugins.svn.wordpress.org/h5p"
             },
-            "time": "2026-05-22T13:06:09+00:00"
+            "time": "2026-07-30T12:25:53+00:00"
         },
         {
             "name": "wp-plugin/koko-analytics",
