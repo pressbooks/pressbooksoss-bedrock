@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "70e47c2e450d3983bdd1a9335e922294",
+    "content-hash": "e23b55ed8b310771a3572f814b416da6",
     "packages": [
         {
             "name": "apereo/phpcas",
@@ -3875,16 +3875,16 @@
         },
         {
             "name": "pressbooks/pressbooks-book",
-            "version": "2.32.0",
+            "version": "2.35.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pressbooks/pressbooks-book.git",
-                "reference": "c7083416f0af25cc52144567c2f10b7d7956e133"
+                "reference": "e69eb56e14c06f086b8ffcd065eb4138ba8c6945"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pressbooks/pressbooks-book/zipball/c7083416f0af25cc52144567c2f10b7d7956e133",
-                "reference": "c7083416f0af25cc52144567c2f10b7d7956e133",
+                "url": "https://api.github.com/repos/pressbooks/pressbooks-book/zipball/e69eb56e14c06f086b8ffcd065eb4138ba8c6945",
+                "reference": "e69eb56e14c06f086b8ffcd065eb4138ba8c6945",
                 "shasum": ""
             },
             "require": {
@@ -3917,9 +3917,9 @@
             ],
             "support": {
                 "issues": "https://github.com/pressbooks/pressbooks-book/issues",
-                "source": "https://github.com/pressbooks/pressbooks-book/tree/2.32.0"
+                "source": "https://github.com/pressbooks/pressbooks-book/tree/2.35.0"
             },
-            "time": "2026-03-16T17:43:18+00:00"
+            "time": "2026-07-23T17:08:49+00:00"
         },
         {
             "name": "pressbooks/pressbooks-cas-sso",
@@ -5302,16 +5302,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.13.5",
+            "version": "3.13.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
-                "reference": "0ca86845ce43291e8f5692c7356fccf3bcf02bf4"
+                "reference": "4c378e1a528ea066890fc2397cbdd2f94eb2fc91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/0ca86845ce43291e8f5692c7356fccf3bcf02bf4",
-                "reference": "0ca86845ce43291e8f5692c7356fccf3bcf02bf4",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/4c378e1a528ea066890fc2397cbdd2f94eb2fc91",
+                "reference": "4c378e1a528ea066890fc2397cbdd2f94eb2fc91",
                 "shasum": ""
             },
             "require": {
@@ -5377,7 +5377,7 @@
                     "type": "thanks_dev"
                 }
             ],
-            "time": "2025-11-04T16:30:35+00:00"
+            "time": "2026-08-06T00:17:32+00:00"
         },
         {
             "name": "symfony/console",
