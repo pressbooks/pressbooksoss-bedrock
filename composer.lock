@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "70e47c2e450d3983bdd1a9335e922294",
+    "content-hash": "2a4205e922edcbbd317fd4f48c0011db",
     "packages": [
         {
             "name": "apereo/phpcas",
@@ -7661,15 +7661,15 @@
         },
         {
             "name": "wp-plugin/redis-cache",
-            "version": "2.7.0",
+            "version": "2.8.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redis-cache/",
-                "reference": "tags/2.7.0"
+                "reference": "tags/2.8.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redis-cache.2.7.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/redis-cache.2.8.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0|~2.0"
